@@ -15,15 +15,9 @@ def check_master():
 	return volume
 
 
-#ADD A CASE WHERE VOLUME IS ALREADY 0
 
 vol = check_master()
 
-# if vol == 0:
-# 	ans = input("Volume is already 0, doy you want to shut down your system? (y/n)")
-# 	if ans != 'y':
-# 		return
-		
 #main loop
 while 1:
 
@@ -37,7 +31,7 @@ while 1:
 		temp = int(vol[:1]) - 1
 
 
-	#when the volume reaches 0, iniciate shutdwn
+	#when the volume reaches 0, iniciate shutdown
 	if temp <= 0:
 		
 		cmd = ["shutdown", "now"]
